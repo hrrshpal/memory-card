@@ -1,8 +1,16 @@
+import { useState } from "react"
+import Navbar from "./components/Navbar"
+import CardContainer from "./components/CardContainer"
+
 function App() {
+
+  const [score, setScore] = useState(0)
+  const [bestScore, setBestScore] = useState(0)
 
   return (
     <>
-      <h1>Memory card game</h1>
+      <Navbar/>
+      <CardContainer />
     </>
   )
 }
