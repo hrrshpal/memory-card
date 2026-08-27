@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <CardContainer />
+      <Navbar score={score} bestScore={bestScore} />
+      <CardContainer score={score} bestScore={bestScore} setScore={setScore} setBestScore={setBestScore} />
     </>
   )
 }
